@@ -1,2 +1,89 @@
+/*
+	Theme name: De Zeeuw Hoveniers theme 
+	Description: WordPress theme released by SQZI ConceptStudio
+	Author: Bert van Meteren
+	Author URI: http://www.sqzi.nl/team/#prettyPhoto/4/
+	version: 1.1
+*/
 body {
-  margin: 0; }
+  margin: 0;
+  background: url("src/images/daiga-ellaby-154935-unsplash.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Bitter', serif; }
+
+h1 {
+  font-size: 33px;
+  color: #d3d500;
+  font-weight: normal; }
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #fff;
+  line-height: 20px; }
+
+span {
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold; }
+
+.header {
+  height: 100px;
+  width: 100%;
+  background: url("src/images/spring-blocks.png");
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+
+.logo {
+  width: 300px;
+  height: 75px;
+  background: url("src/images/de-zeeuw-hoveniers.png");
+  background-repeat: no-repeat; }
+
+.container {
+  padding: 0 10%; }
+
+/* menu */
+.main {
+  margin-top: 50px;
+  height: 40px;
+  background: url("src/images/spring-blocks.png");
+  display: flex;
+  align-items: center; }
+
+.menu {
+  padding: 0; }
+  .menu__list {
+    display: inline-flex;
+    list-style: none; }
+  .menu__item {
+    color: #d3d500;
+    text-decoration: none;
+    padding: 0 25px 0 0;
+    font-size: 17px; }
+    .menu__item:hover {
+      color: #fff; }
+
+.slider {
+  margin-top: 40px;
+  height: 350px;
+  background: url("src/images/spring-blocks.png"); }
+
+/* main */
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px; }
+  .content__left {
+    width: 65%;
+    background: url("src/images/spring-blocks.png");
+    padding: 0 20px;
+    overflow: hidden; }
+  .content__right {
+    width: 30%;
+    height: 50px;
+    background: #000; }
