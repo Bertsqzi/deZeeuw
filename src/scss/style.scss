@@ -7,29 +7,40 @@
 */
 
 @import 'variables';
+@import 'mixins/breakpoints';
 
 body {
+	color: #fff;
 	margin: 0;
 	background: url('src/images/daiga-ellaby-154935-unsplash.jpg') no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	font-family: 'Bitter', serif;
-
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 20px;
 }
 
 h1 {
 	font-size: 33px;
 	color: $green;
 	font-weight: normal;
+	font-family: 'Bitter', serif;
+	line-height: 32px;
 }
 
 p {
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	color: $white;
-	line-height: 20px;
+}
+
+.list {
+	margin-left: 20px;
+
+	@media only screen and (max-width: 700px) {
+		margin-left: 0;
+	}
 }
 
 span {
@@ -59,7 +70,6 @@ span {
 }
 
 /* menu */
-
 .main {
 	margin-top: 50px;
 	height: 40px;
@@ -79,13 +89,17 @@ span {
 	&__item {
 		color: $green;
 		text-decoration: none;
-		padding: 0 25px 0 0;
 		font-size: 17px;
 
 		&:hover {
 			color: $white;
 		}
 	}
+}
+
+span {
+	color: $green;
+	padding: 0 10px;
 }
 
 .slider {
@@ -96,20 +110,42 @@ span {
 
 /* main */
 .content {
+	margin-top: 50px;
 	display: flex;
 	justify-content: space-between;
-	margin-top: 40px;
+
+	@media only screen and (max-width: 700px) {
+		flex-direction: column;
+	}
 
 	&__left {
 		width: 65%;
 		background: url('src/images/spring-blocks.png');
-		padding: 0 20px;
-		overflow: hidden;
+		padding: 20px;
+
+		@media only screen and (max-width: 700px) {
+			width: auto;
+			margin-top: 20px;
+			padding: 20px;
+		}
 	}
 
 	&__right {
-		width: 30%;
+		width: 28%;
 		height: 50px;
 		background: #000;
+
+		@media only screen and (max-width: 700px) {
+			width: 100%;
+			margin-top: 20px;
+		}
 	}
+}
+
+.footer {
+	position: relative;
+	height: 200px;
+	width: 100%;
+	background: url('src/images/spring-blocks.png');
+	margin-top: 50px;
 }

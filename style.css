@@ -6,24 +6,33 @@
 	version: 1.1
 */
 body {
+  color: #fff;
   margin: 0;
   background: url("src/images/daiga-ellaby-154935-unsplash.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  font-family: 'Bitter', serif; }
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 20px; }
 
 h1 {
   font-size: 33px;
   color: #d3d500;
-  font-weight: normal; }
+  font-weight: normal;
+  font-family: 'Bitter', serif;
+  line-height: 32px; }
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
-  color: #fff;
-  line-height: 20px; }
+  color: #fff; }
+
+.list {
+  margin-left: 20px; }
+  @media only screen and (max-width: 700px) {
+    .list {
+      margin-left: 0; } }
 
 span {
   color: #fff;
@@ -63,10 +72,13 @@ span {
   .menu__item {
     color: #d3d500;
     text-decoration: none;
-    padding: 0 25px 0 0;
     font-size: 17px; }
     .menu__item:hover {
       color: #fff; }
+
+span {
+  color: #d3d500;
+  padding: 0 10px; }
 
 .slider {
   margin-top: 40px;
@@ -75,15 +87,33 @@ span {
 
 /* main */
 .content {
+  margin-top: 50px;
   display: flex;
-  justify-content: space-between;
-  margin-top: 40px; }
+  justify-content: space-between; }
+  @media only screen and (max-width: 700px) {
+    .content {
+      flex-direction: column; } }
   .content__left {
     width: 65%;
     background: url("src/images/spring-blocks.png");
-    padding: 0 20px;
-    overflow: hidden; }
+    padding: 20px; }
+    @media only screen and (max-width: 700px) {
+      .content__left {
+        width: auto;
+        margin-top: 20px;
+        padding: 20px; } }
   .content__right {
-    width: 30%;
+    width: 28%;
     height: 50px;
     background: #000; }
+    @media only screen and (max-width: 700px) {
+      .content__right {
+        width: 100%;
+        margin-top: 20px; } }
+
+.footer {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  background: url("src/images/spring-blocks.png");
+  margin-top: 50px; }
